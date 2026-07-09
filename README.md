@@ -15,7 +15,7 @@ contradicting the initial assumption.
 > **Key finding:** Restaurant wait time (r=0.78) impacts delivery 
 > performance MORE than driver distance (r=0.50)
 
-![Correlacion](imagenes/Correlacion_entre_Variables_Operativas.png)
+[Correlacion](imagenes/correlacion_variables.png)
 
 ---
 
@@ -23,7 +23,7 @@ contradicting the initial assumption.
 > **5% of orders** were flagged as anomalies — high delivery times 
 > regardless of distance, suggesting external causes
 
-![Anomalias](imagenes/Anomalías.png)
+![Anomalias](imagenes/anomalias.png)
 
 ---
 
@@ -31,7 +31,7 @@ contradicting the initial assumption.
 > Model shows strong fit between real and predicted delivery times,
 > especially in the **10-35 min range** (core of all orders)
 
-![Regresion](imagenes/Real_vs_Predicho.png)
+![Regresion](imagenes/real_vs_predicho.png)
 
 ---
 
@@ -39,14 +39,14 @@ contradicting the initial assumption.
 > SLA drops to **67-72%** during lunch (12pm-2pm) 
 > and dinner (7pm-9pm) peak hours
 
-![SLA](imagenes/Cumplimiento_SLA.png)
+![SLA](imagenes/cumplimiento_sla.png)
 
 ---
 
 ### Model Evaluation
 > XGBoost achieved **92.85% accuracy** — best performing model
 
-![Modelo](imagenes/fase2_visualizacion_rappi.png)
+![Modelo](imagenes/fase2_visualizacion.png)
 
 ## 💼 Business Impact & Recommendations
 
