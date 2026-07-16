@@ -1,0 +1,6 @@
+id_metodo,tipo_pago,plataforma
+1,Tarjeta de crédito,Visa
+2,Tarjeta de débito,Mastercard
+3,Efectivo,Efectivo
+4,Billetera digital,Yape
+5,Billetera digital,Plin

@@ -1,0 +1,11 @@
+id_cadena,nombre_cadena,tiene_sucursal_vip,id_categoria
+1,KFC,1,2
+2,McDonald's,1,2
+3,Bembos,0,2
+4,Pizza Hut,1,3
+5,Chifa El Dragón,0,4
+6,Don Belisario,0,1
+7,Subway,0,5
+8,La Lucha,0,1
+9,Norky's,0,1
+10,Pardos Chicken,1,1

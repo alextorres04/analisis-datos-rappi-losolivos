@@ -1,0 +1,6 @@
+id_estado,estado_actual,detalle_estado,responsable_actual,hubo_incidencia
+1,Entregado,Pedido entregado a tiempo,Repartidor,0
+2,Entregado con retraso,Entregado fuera del SLA,Repartidor,1
+3,Cancelado cliente,Cliente canceló el pedido,Cliente,1
+4,Cancelado sistema,Sin repartidor disponible,Sistema,1
+5,Incidencia restaurant,Restaurante no pudo preparar pedido,Restaurante,1

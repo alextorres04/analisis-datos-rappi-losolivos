@@ -1,0 +1,4 @@
+id_suscripcion,nombre_suscripcion,costo_mensual_soles,envio_gratis,beneficios
+1,Sin suscripción,0.0,0,Ninguno
+2,Rappi Prime,19.9,1,Envío gratis y descuentos
+3,Rappi Turbo,29.9,1,Envío en 30min garantizado

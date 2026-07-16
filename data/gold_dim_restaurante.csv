@@ -1,0 +1,11 @@
+id_restaurante,nombre_sucursal,latitud,longitud,calificacion_promedio,id_cadena
+1,KFC Los Olivos,-11.9756,-77.0697,4.1,1
+2,McDonald's Universitaria,-11.9801,-77.0712,4.3,2
+3,Bembos Los Olivos,-11.9823,-77.0688,4.0,3
+4,Pizza Hut Los Olivos,-11.9778,-77.0723,3.9,4
+5,Chifa El Dragón,-11.9745,-77.0665,4.5,5
+6,Don Belisario Los Olivos,-11.9812,-77.0701,4.2,6
+7,Subway Universitaria,-11.9767,-77.0734,4.0,7
+8,La Lucha Los Olivos,-11.9839,-77.0678,4.7,8
+9,Norky's Los Olivos,-11.979,-77.0745,4.1,9
+10,Pardos Chicken Los Olivos,-11.9834,-77.0692,4.4,10
