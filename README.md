@@ -1,115 +1,195 @@
-## 🎯 Problem Statement
+🚀 Rappi Delivery Analytics | SLA Prediction & Business Intelligence
 
-Rappi's delivery service in Los Olivos district faced 
-a **7.58% SLA non-compliance rate**, causing customer 
-dissatisfaction. The challenge was to **predict delivery 
-delays before they happen** and identify the root causes.
+End-to-end Data Analytics project focused on delivery performance analysis, SLA prediction, Business Intelligence, and Machine Learning for Rappi's delivery operations in Los Olivos, Peru.
 
-**Key finding:** Restaurant wait time (r=0.78) impacts 
-delivery time MORE than driver distance (r=0.50) — 
-contradicting the initial assumption.
+📌 Project Overview
 
-## 📊 Key Results
+Last-mile delivery companies must maintain high Service Level Agreement (SLA) compliance to ensure customer satisfaction and operational efficiency.
 
-### Correlation Analysis
-> **Key finding:** Restaurant wait time (r=0.78) impacts delivery 
-> performance MORE than driver distance (r=0.50)
+This project analyzes over 10,000 simulated delivery records to identify the main factors affecting delivery performance and build a predictive system capable of detecting late deliveries before they occur.
 
-[Correlacion](imagenes/correlacion_variables.png)
+The complete solution includes:
 
----
+📊 Interactive Power BI Dashboard
+🗄️ Data Warehouse (Snowflake Schema)
+🔄 ETL Pipeline (Bronze → Silver → Gold)
+🤖 Machine Learning Models
+⚡ FastAPI Prediction API
+🌐 React Dashboard
+📸 Dashboard Preview
+Executive Dashboard
+<p align="center"> <img src="imagenes/dashboard.png" width="950"> </p>
+🏗️ Solution Architecture
+<p align="center"> <img src="imagenes/arquitectura.png" width="900"> </p>
+Data Flow
+Raw Data
+      │
+      ▼
+ Bronze Layer
+      │
+      ▼
+ Silver Layer
+      │
+      ▼
+ Gold Layer
+      │
+      ▼
+ Data Warehouse
+      │
+      ├── Power BI Dashboard
+      ├── Machine Learning
+      ├── FastAPI
+      └── React Dashboard
+🎯 Business Problem
 
-### Anomaly Detection
-> **5% of orders** were flagged as anomalies — high delivery times 
-> regardless of distance, suggesting external causes
+The delivery service presented an SLA compliance of 92.42%, meaning approximately 7.58% of deliveries exceeded the expected delivery time.
 
-![Anomalias](imagenes/anomalias.png)
+Business questions:
 
----
+Why are deliveries arriving late?
+Which operational variables have the greatest impact?
+Can late deliveries be predicted before they happen?
+What actions would improve SLA compliance?
+📊 Exploratory Data Analysis
+Correlation Analysis
 
-### Linear Regression — Real vs Predicted
-> Model shows strong fit between real and predicted delivery times,
-> especially in the **10-35 min range** (core of all orders)
+Restaurant waiting time proved to be the strongest predictor of delivery delays.
 
-![Regresion](imagenes/real_vs_predicho.png)
+Variable	Correlation
+Restaurant Waiting Time	0.78
+Driver Distance	0.50
+<p align="center"> <img src="imagenes/correlacion_variables.png" width="850"> </p>
+SLA Compliance by Hour
 
----
+Performance decreases significantly during lunch and dinner peak hours.
 
-### SLA Compliance by Hour
-> SLA drops to **67-72%** during lunch (12pm-2pm) 
-> and dinner (7pm-9pm) peak hours
+<p align="center"> <img src="imagenes/cumplimiento_sla.png" width="850"> </p>
+Anomaly Detection
 
-![SLA](imagenes/cumplimiento_sla.png)
+Isolation Forest detected approximately 5% of deliveries with abnormal behavior.
 
----
+<p align="center"> <img src="imagenes/anomalias.png" width="850"> </p>
+🤖 Machine Learning
 
-### Model Evaluation
-> XGBoost achieved **92.85% accuracy** — best performing model
+Four different algorithms were evaluated.
 
-![Modelo](imagenes/fase2_visualizacion.png)
+Model	Objective
+Logistic Regression	Classification
+Random Forest	Classification
+XGBoost	Classification
+Linear Regression	Regression
+Best Model
+XGBoost
 
-## 💼 Business Impact & Recommendations
+Accuracy
 
-### What the data revealed
-The model discovered that **optimizing restaurant 
-preparation times** would have 56% more impact than 
-optimizing driver routes — a counter-intuitive finding 
-that changes the entire operational strategy.
+92.85%
 
-### Actionable recommendations
-1. **Pre-alert restaurants** 15 min before driver arrival
-   → Estimated reduction: 2-3 min per order
-   
-2. **Increase driver availability 30%** during 12pm-2pm 
-   and 7pm-9pm peak hours
-   → Expected SLA recovery: 85%+
-   
-3. **Deploy XGBoost model** in production
-   → Auto-reassign when SLA probability < 60%
-## 🛠️ Technical Skills Demonstrated
+<p align="center"> <img src="imagenes/fase2_visualizacion.png" width="850"> </p>
+Regression Performance
 
-### Data Engineering
-- Built a **Snowflake schema Datamart** with 1 fact table 
-  and 11 dimension tables in MySQL
-- Implemented **ETL pipeline**: Bronze → Silver → Gold
-- Generated and processed **10,000 realistic records** 
-  with Python simulation
+Real vs Predicted Delivery Time
 
-### Machine Learning
-- Compared **4 algorithms**: Logistic Regression, 
-  Random Forest, XGBoost, Linear Regression
-- Applied **K-Means clustering** for zone segmentation
-- Used **Isolation Forest** for anomaly detection
-- Addressed **class imbalance** (92.4% vs 7.6%) 
-  with SMOTE technique
+<p align="center"> <img src="imagenes/real_vs_predicho.png" width="850"> </p>
+💡 Business Insights
 
-### Data Visualization
-- Built **interactive Power BI dashboard** with 5 KPIs,
-  heatmap and drill-through analysis
-- Created **REST API** with FastAPI exposing ML predictions
-- Developed **React dashboard** consuming real-time data
+The analysis revealed that:
 
-### Statistical Analysis
-- Correlation matrix revealed key relationships
-- Residual analysis validated model assumptions
-- P-values confirmed statistical significance
-- R² measured model explanatory power
+Restaurant preparation time has a greater impact on delivery delays than courier distance.
+Lunch and dinner represent the highest operational risk periods.
+A small percentage of deliveries exhibit abnormal operational behavior.
+Machine Learning enables proactive SLA monitoring before delays occur.
+📈 Business Recommendations
+Restaurant Operations
+Notify restaurants before courier arrival.
+Reduce food preparation waiting times.
 
-- ##  Quick Start
+Expected impact
 
-### Prerequisites
-- Python 3.14+, Node.js 18+, MySQL 8.0+
+2–3 minutes less per delivery.
+Fleet Management
 
-### Run in 3 steps
-# 1. Setup database
+Increase courier availability during:
+
+12:00 PM – 2:00 PM
+7:00 PM – 9:00 PM
+
+Expected SLA:
+
+85%+
+
+Predictive Analytics
+
+Deploy the XGBoost model into production.
+
+Automatically identify deliveries with a high probability of SLA failure and reassign drivers when necessary.
+
+🛠️ Technology Stack
+Data Engineering
+Python
+MySQL
+ETL Pipeline
+Snowflake Schema
+Data Analysis
+Pandas
+NumPy
+Machine Learning
+Scikit-Learn
+XGBoost
+Isolation Forest
+K-Means
+SMOTE
+Visualization
+Power BI
+Matplotlib
+Seaborn
+Backend
+FastAPI
+Frontend
+React
+📁 Project Structure
+Rappi-Delivery-Analytics
+│
+├── backend
+├── frontend
+├── notebooks
+├── sql
+├── dataset
+├── imagenes
+├── README.md
+🚀 Quick Start
+Clone repository
+git clone https://github.com/alextorres04/analisis-datos-rappi-losolivos.git
+Database
 mysql -u root -p < rappi.sql
+Backend
+cd backend
+uvicorn main:app --reload
+Frontend
+cd frontend
+npm install
+npm start
+🌐 Application
+Service	URL
+React Dashboard	http://localhost:3000
+FastAPI	http://localhost:8000
+Swagger Docs	http://localhost:8000/docs
+📌 Skills Demonstrated
+Data Cleaning
+Exploratory Data Analysis (EDA)
+Statistical Analysis
+Feature Engineering
+Machine Learning
+ETL Development
+Data Warehousing
+Dashboard Development
+Business Intelligence
+REST API Development
+React Integration
+👨‍💻 Author
 
-# 2. Start API
-cd backend && uvicorn main:app --reload
+Alexander Torres
 
-# 3. Start Dashboard  
-cd frontend && npm install && npm start
+Software Engineering Student | Aspiring Data Analyst
 
-# Access
-Dashboard → http://localhost:3000
-API Docs  → http://localhost:8000/docs
+GitHub: https://github.com/alextorres04
