@@ -294,7 +294,7 @@ npm start
 ---
 
 ### Página 3 — Detalle por Restaurante y Repartidor
-![Detalle Restaurante y Repartidor](imagenes/dashboard_detalle_rest_rep.png)
+![Detalle Restaurante y Repartidor](imagenes/dashboard_detalle_res_rep.png)
 
 - Tabla de detalle por restaurante con SLA y retraso individual
 - Calificación de repartidores vs. cumplimiento SLA
