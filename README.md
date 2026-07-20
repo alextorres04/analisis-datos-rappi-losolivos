@@ -272,24 +272,43 @@ npm start
 
 ## 📈 Dashboards Power BI
 
-### Dashboard Operativo de Entregas
+### Página 1 — Dashboard Operativo de Entregas
+![Dashboard Operativo](imagenes/dashboard_operativo.png)
+
 - 5 KPIs en tiempo real (SLA, Retraso, Distancia, Espera, Tiempo)
-- Cumplimiento SLA por hora del día
+- Cumplimiento SLA por hora del día (caídas en 12-14h y 19-21h)
 - Top 10 restaurantes con mayor retraso promedio
 - Mapa de calor geográfico por zona en Los Olivos
 - Retraso promedio por tipo de vehículo y día de semana
 
-### Flujo del Pedido
+---
+
+### Página 2 — Flujo del Pedido
+![Flujo del Pedido](imagenes/dashboard_flujo_pedido.png)
+
 - Embudo de conversión: Total → Entregados → A Tiempo **(54.5%)**
 - Distribución de 5 estados de pedido (dona)
 - Tiempo en restaurante vs. tiempo en tránsito por zona
+- 4 KPIs: % Tiempo en Restaurante, Tránsito, Espera y Entrega
 
-### Prototipo Web (React + FastAPI)
+---
+
+### Página 3 — Detalle por Restaurante y Repartidor
+![Detalle Restaurante y Repartidor](imagenes/dashboard_detalle_rest_rep.png)
+
+- Tabla de detalle por restaurante con SLA y retraso individual
+- Calificación de repartidores vs. cumplimiento SLA
+- Pedidos por modalidad de contrato del repartidor
+- Dispersión: calificación vs. eficiencia operativa
+
+---
+
+### Prototipo Web — React + FastAPI
+![Prototipo Web](imagenes/prototipo_web.png)
+
 - Dashboard interactivo con datos en tiempo real desde MySQL
 - **Predictor de SLA en tiempo real** usando el modelo XGBoost
 - Indicador de API conectada en tiempo real
-
----
 
 ## 🤖 Modelo Predictivo
 
