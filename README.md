@@ -227,7 +227,7 @@ npm start
 ## 📊 Visualizaciones y Análisis
 
 ### Regresión Lineal — Real vs Predicho (R² = 0.83)
-![Regresión Lineal](imagenes/real_vs_predicho.png)
+![Regresión Lineal](imagenes/Real_vs_Predicho.png)
 
 ### Correlación entre Variables Operativas
 ![Correlación](imagenes/correlacion_variables.png)
@@ -235,7 +235,7 @@ npm start
 > **Hallazgo clave:** La espera en restaurante (r=0.78) impacta más el tiempo de entrega que la distancia (r=0.50)
 
 ### Cumplimiento SLA por Hora del Día
-![SLA por Hora](imagenes/cumplimiento_sla.png)
+![SLA por Hora](imagenes/Cumplimiento_SLA.png)
 
 > **Caídas críticas** detectadas en franjas 12:00–14:00h y 19:00–21:00h
 
