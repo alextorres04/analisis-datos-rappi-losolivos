@@ -348,4 +348,3 @@ KPI 5 — Tiempo Promedio de Entrega
 - Zelada Flórez, E. A. (2022). *Gestión logística y atención al cliente en una empresa industrial del rubro alimentos.* Revista Economía & Negocios, 4(2), 57-79.
 
 ---
-
