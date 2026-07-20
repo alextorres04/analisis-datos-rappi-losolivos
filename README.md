@@ -98,6 +98,20 @@ La zona de la **Av. Universitaria en Los Olivos** presenta:
 └─────────────────────────────────────────────────────────┘
 ```
 
+## 🗄️ Modelo Dimensional del Datamart
+
+El datamart implementa un **esquema copo de nieve** compuesto por 
+1 tabla de hechos central y 11 dimensiones normalizadas.
+
+![Datamart](docs/datamart.png)
+
+**Tabla de Hechos:** `fact_pedidos` — registra cada pedido con métricas 
+de tiempo, distancia, SLA y espera en restaurante.
+
+**Dimensiones principales:** `dim_zona`, `dim_tiempo`, `dim_restaurante`, 
+`dim_repartidor`, `dim_cliente`, `dim_estado_pedido` y 5 subdimensiones 
+adicionales.
+
 ---
 
 ## 🛠️ Stack Tecnológico
