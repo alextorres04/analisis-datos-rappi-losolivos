@@ -361,17 +361,6 @@ KPI 5 — Tiempo Promedio de Entrega
 
 ---
 
-## 👥 Equipo
-
-| Integrante | Rol |
-|---|---|
-| Gutierrez Guerra, Renzo Manuel | Análisis de datos |
-| Murillo Molina, Axl Antonio | ETL y modelado |
-| Córdova Olivos, Samanta Milagros | Visualización BI |
-| Sanchez Rosales, Jefferson Alexander | Machine Learning |
-| Macalopú Torres, César Alexander | Backend y Frontend |
-| Carhuaricra Cachi, Frank Steven | Documentación |
-
 ---
 
 ## 📚 Referencias
